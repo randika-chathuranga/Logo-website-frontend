@@ -1,0 +1,489 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#161616 ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height:100vh;
+    box-sizing: border-box;
+    background-color:gainsboro;
+    position: relative;
+    background-image: url("F:\logo website/gent.jpg");
+    background-repeat: no-repeat;
+    background-size:1600px 800px;
+    background-position: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family:serif;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    background-color: #f4f7ff;
+    z-index: 1;
+
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+
+.lang{
+    color: black;
+    font-size: 10px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+    font-family: poppins;
+}
+.menu li a:hover{
+    background-color: black;
+    color:navajowhite;
+    font-weight: 700;
+    
+}
+.name{
+    font-family: calibri;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%,-50%);
+    
+}
+
+.name p:nth-child(1),
+.name .details{
+    color: #6c707c;
+    font-size: 16px;
+}
+.name h1{
+    font-family: poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing : 3px;
+    color: #292929;
+}
+.cv-button{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: #ffffff;
+}
+
+.cv-button:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+    
+}
+
+.social{
+    position: absolute;
+    left: 50px;
+    bottom:50px;
+    display: flex;
+       
+}
+
+.social a{
+    margin: 6px 12px;
+}
+
+.social i{
+    color: black;
+    font-size: 40px;
+    justify-content: space-between;
+}
+.social a:hover i{
+    color: blue; 
+    transition: all ease 0.5s;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.about-text{
+    padding: 0 0 0 50px;
+    font-family: sans-serif;
+    width: 50%;
+    color: rgb(225, 232, 235);
+    text-align: left;
+}
+.about-text p{
+    color: white;
+}
+
+.about-text h1{
+    font-size:25px;
+    color: white;
+}
+
+.about-text h2{
+    font-size: 3rem;
+    color: rgb(193, 194, 194);
+    font-weight: 400;
+}
+
+.about-text button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(76, 127, 145);
+    outline-color: none;
+    margin: 20px;
+}
+
+.about-text button:hover{
+    background-color:#ffffff ;
+    transition: all ease 0.3s;
+}
+
+#services{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;  
+}
+.s-heading h1{
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+}
+
+.s-heading p{
+    color: lightblue;
+    font-size: 1rem;
+    margin: 0%;
+    padding: 0%;
+}
+.s-heading{
+    text-align: center;
+}
+
+.s-box{
+    background-color: #2b2b2b;
+    width: 350px;
+    height: 600px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+     
+}
+
+
+.s-b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.s-b-img{
+   width: 100%;
+   height: 70%;
+}
+
+.s-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s-b-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.s-b-text a{
+    color: white;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.s-type{
+    font-family: calibri;
+    color:black;
+    padding: 20px 20px 20px 20px;
+    background-color: gray;
+    position: absolute;
+    transform: translateX(100%);
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.s-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+.s-b-text a:hover{
+    color: gray;
+}
+
+#portfolio{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.p-heading{
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+
+}
+
+.p-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-box{
+    background-color: rgb(79, 85, 85);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    outline: black;
+}
+
+.p-b-container{
+    width: 1300px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+
+.text-over-lay{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   /*flex-direction: column;*/
+   background-color: rgba(233, 231, 113, 0.904);
+   /*left: 0px;*/
+   /*top: 0px;*/
+   display: none;
+}
+.text-over-lay h1,p{
+    color: rgb(20, 18, 14);
+}
+.text-over-lay h1{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.p-box:hover .text-over-lay{
+    display: flex;
+}
+
+#contact-btn h1{
+    font-size: 2rem;
+    color: #1e1e1e;
+    font-family: sans-serif;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 4px;
+}
+#contact-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    background-color: rgb(223, 219, 213);
+
+}
+#contact-btn a{
+    color: white;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-btn a:hover{
+    color:black;
+    background-color: rgb(224, 235, 68);
+    transition: all ease 0.3s;
+}
+
+#contact-form{
+    width: 2200px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#contact-form form{
+    display: flex;
+    width: 70%;
+    height: 70%;
+    background-color:#131313 ;
+    
+}
+
+.contact-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.c-l-heading{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.f-name,.f-email{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-name label,.f-email label{
+    color: white;
+    font-size: 22px;
+}
+
+.f-name input,.f-email input{
+    width: 300px;
+    height:25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+    border-bottom: 1px solid white;
+}
+
+.f-name input::placeholder
+,.f-email input::placeholder{
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.f-name input:focus,.f-email input:focus{
+    border-bottom:1px solid blue;
+    transition: all ease 0.3s;
+}
+
+.message{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message label{
+    color: white;
+    font-size: 25px;
+    margin: 10px 0 0 0PX;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.message textarea{
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin: 20px;
+}
+.message textarea::placeholder{
+    color: white;
+}
+
+.contact-right button{
+    width: 50%;
+    height: 50px;
+    background-color: rgb(22, 102, 129);
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 200px;
+    outline: none;
+    border: none;
+
+} 
